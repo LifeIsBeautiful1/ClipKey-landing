@@ -15,6 +15,7 @@ interface PopupDialogProps {
 const PopupDialog = ({ usageCount, threshold, onDismiss, onNeverShow }: PopupDialogProps) => {
   const [open, setOpen] = useState(false);
   const [confetti, setConfetti] = useState<Array<{ id: number; top: number; left: number; delay: number; color: string }>>([]); 
+  const chromeStoreUrl = "https://chromewebstore.google.com/detail/quick-url-navigator/jnbfbkiegbghcfbmpdongghpcjidmljn";
 
   useEffect(() => {
     if (usageCount >= threshold) {
@@ -50,7 +51,7 @@ const PopupDialog = ({ usageCount, threshold, onDismiss, onNeverShow }: PopupDia
   };
 
   const handleRate = () => {
-    window.open("https://chromewebstore.google.com/detail/quick-url-navigator/jnbfbkiegbghcfbmpdongghpcjidmljn?authuser=0&hl=en-GB", "_blank");
+    window.open(chromeStoreUrl, "_blank");
     setOpen(false);
     onDismiss();
     toast({
@@ -64,7 +65,7 @@ const PopupDialog = ({ usageCount, threshold, onDismiss, onNeverShow }: PopupDia
     navigator.share({
       title: 'Quick URL Navigator',
       text: 'Check out this useful Chrome extension for navigating URLs!',
-      url: 'https://chromewebstore.google.com/detail/quick-url-navigator/jnbfbkiegbghcfbmpdongghpcjidmljn?authuser=0&hl=en-GB',
+      url: chromeStoreUrl,
     }).catch((error) => console.log('Error sharing', error));
     
     setOpen(false);

@@ -21,6 +21,9 @@ import {
 } from "lucide-react";
 
 const Index = () => {
+  // Define the Chrome store URL as a constant to avoid repetition
+  const chromeStoreUrl = "https://chromewebstore.google.com/detail/quick-url-navigator/jnbfbkiegbghcfbmpdongghpcjidmljn";
+  
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-blue-50">
       {/* Hero Section */}
@@ -54,7 +57,11 @@ const Index = () => {
             />
           </div>
           
-          <Button className="bg-blue-500 hover:bg-blue-600 text-white text-lg py-6 px-8" size="lg">
+          <Button 
+            className="bg-blue-500 hover:bg-blue-600 text-white text-lg py-6 px-8" 
+            size="lg"
+            onClick={() => window.open(chromeStoreUrl, "_blank")}
+          >
             <ExternalLink className="mr-2 h-5 w-5" />
             Add to Chrome - Free
           </Button>
@@ -311,11 +318,18 @@ const Index = () => {
               Try it today and experience the difference!
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button className="bg-blue-500 hover:bg-blue-600">
+              <Button 
+                className="bg-blue-500 hover:bg-blue-600"
+                onClick={() => window.open(chromeStoreUrl, "_blank")}
+              >
                 <ExternalLink className="mr-2 h-5 w-5" />
                 Add to Chrome
               </Button>
-              <Button variant="outline" className="border-blue-500 text-blue-500 hover:bg-blue-50">
+              <Button 
+                variant="outline" 
+                className="border-blue-500 text-blue-500 hover:bg-blue-50"
+                onClick={() => window.open(chromeStoreUrl, "_blank")}
+              >
                 <Star className="mr-2 h-5 w-5" />
                 Rate Extension
               </Button>
