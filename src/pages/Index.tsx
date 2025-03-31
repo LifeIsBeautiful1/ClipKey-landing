@@ -27,9 +27,11 @@ const Index = () => {
       <section className="container mx-auto px-4 pt-16 pb-12 md:pt-24 md:pb-20 text-center">
         <div className="flex flex-col items-center max-w-4xl mx-auto">
           <div className="flex items-center mb-6">
-            <div className="bg-blue-500 p-3 rounded-xl">
-              <Clipboard className="h-8 w-8 text-white" />
-            </div>
+            <img 
+              src="/lovable-uploads/cab5fd88-b94b-45cf-b131-985fadef0d0f.png" 
+              alt="ClipKey Logo" 
+              className="h-14 w-14"
+            />
             <h1 className="text-3xl md:text-4xl font-bold ml-3 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
               ClipKey
             </h1>
@@ -355,9 +357,11 @@ const Index = () => {
       <footer className="bg-gray-50 py-8 border-t border-gray-200">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center mb-4">
-            <div className="bg-blue-500 p-2 rounded-lg">
-              <Clipboard className="h-5 w-5 text-white" />
-            </div>
+            <img 
+              src="/lovable-uploads/cab5fd88-b94b-45cf-b131-985fadef0d0f.png" 
+              alt="ClipKey Logo" 
+              className="h-8 w-8"
+            />
             <h3 className="text-xl font-bold ml-2">ClipKey</h3>
           </div>
           <p className="text-gray-600 mb-4">
