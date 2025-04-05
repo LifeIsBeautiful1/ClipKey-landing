@@ -289,8 +289,8 @@ const Index = () => {
                     <h3 className="font-semibold mb-2">Your Suggestions</h3>
                     <p className="text-gray-600">
                       Have an idea? Let us know at{" "}
-                      <a href="mailto:lifeisbeautifulslu@gmail.com" className="text-blue-500 hover:underline">
-                        lifeisbeautifulslu@gmail.com
+                      <a href="mailto:juanramoncano.tech@gmail.com" className="text-blue-500 hover:underline">
+                        juanramoncano.tech@gmail.com
                       </a>
                     </p>
                   </div>
@@ -385,8 +385,8 @@ const Index = () => {
             <p>© {new Date().getFullYear()} ClipKey. All rights reserved.</p>
             <p className="mt-2">
               Contact:{" "}
-              <a href="mailto:lifeisbeautifulslu@gmail.com" className="text-blue-500 hover:underline">
-                lifeisbeautifulslu@gmail.com
+              <a href="mailto:juanramoncano.tech@gmail.com" className="text-blue-500 hover:underline">
+                juanramoncano.tech@gmail.com
               </a>
             </p>
           </div>
