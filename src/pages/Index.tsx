@@ -1,8 +1,8 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Separator } from "@/components/ui/separator";
 import { 
   Copy, 
   Keyboard, 
@@ -17,7 +17,8 @@ import {
   Globe,
   Clipboard,
   Settings,
-  Lock
+  Lock,
+  ArrowRight
 } from "lucide-react";
 
 const Index = () => {
@@ -112,12 +113,51 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="mt-12 p-6 max-w-4xl mx-auto rounded-xl bg-blue-50 border border-blue-100">
-            <p className="text-center text-blue-600 font-medium">
-              Example: If your template is <code className="bg-white px-2 py-1 rounded">https://www.yoursite.com/order/[[placeholder]]</code>
-              <br />and you copy <strong>ORDER123</strong>, pressing the shortcut will open
-              <br /><code className="bg-white px-2 py-1 rounded">https://www.yoursite.com/order/ORDER123</code>
-            </p>
+          <div className="mt-12 max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl border border-blue-200 shadow-md overflow-hidden">
+              <div className="bg-blue-600 text-white py-3 px-6">
+                <h3 className="font-medium">How ClipKey Works - Example</h3>
+              </div>
+              
+              <div className="p-6">
+                <div className="flex flex-col lg:flex-row items-center justify-center gap-4 text-center lg:text-left">
+                  <div className="bg-white p-4 rounded-lg border border-blue-200 shadow-sm flex-1">
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">Step 1:</span> Set your template</p>
+                    <code className="bg-gray-50 px-3 py-2 rounded border border-gray-200 text-sm text-blue-600 block">
+                      https://www.yoursite.com/order/[[placeholder]]
+                    </code>
+                  </div>
+                  
+                  <div className="hidden lg:block">
+                    <ArrowRight className="h-6 w-6 text-blue-500" />
+                  </div>
+                  
+                  <div className="bg-white p-4 rounded-lg border border-blue-200 shadow-sm flex-1">
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">Step 2:</span> Copy reference number</p>
+                    <div className="bg-gray-50 px-3 py-2 rounded border border-gray-200 text-sm block">
+                      <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded font-mono">ORDER123</span>
+                    </div>
+                  </div>
+                  
+                  <div className="hidden lg:block">
+                    <ArrowRight className="h-6 w-6 text-blue-500" />
+                  </div>
+                  
+                  <div className="bg-white p-4 rounded-lg border border-blue-200 shadow-sm flex-1">
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">Step 3:</span> Press shortcut</p>
+                    <div className="bg-green-50 px-3 py-2 rounded border border-green-200 text-sm text-green-800 block">
+                      Opens: <code className="font-mono">yoursite.com/order/ORDER123</code>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="mt-4 bg-blue-50 p-3 rounded-md border border-blue-100">
+                  <p className="text-blue-700 text-sm text-center">
+                    <span className="font-medium">Time saved:</span> No more copying, opening tabs, and pasting reference numbers manually
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
