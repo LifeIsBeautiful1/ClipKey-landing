@@ -113,47 +113,108 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="mt-12 max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl border border-blue-200 shadow-md overflow-hidden">
+          <div className="mt-16 max-w-4xl mx-auto">
+            <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl border border-blue-200 shadow-md overflow-hidden">
               <div className="bg-blue-600 text-white py-3 px-6">
-                <h3 className="font-medium">How ClipKey Works - Example</h3>
+                <h3 className="font-semibold text-lg">How ClipKey Works - Example</h3>
               </div>
               
               <div className="p-6">
-                <div className="flex flex-col lg:flex-row items-center justify-center gap-4 text-center lg:text-left">
-                  <div className="bg-white p-4 rounded-lg border border-blue-200 shadow-sm flex-1">
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Step 1:</span> Set your template</p>
-                    <code className="bg-gray-50 px-3 py-2 rounded border border-gray-200 text-sm text-blue-600 block">
-                      https://www.yoursite.com/order/[[placeholder]]
+                <div className="hidden md:flex items-center justify-between space-x-4">
+                  <div className="bg-white p-5 rounded-lg border border-blue-200 shadow-sm w-1/3">
+                    <div className="flex items-center mb-3">
+                      <div className="bg-blue-100 w-7 h-7 rounded-full flex items-center justify-center text-blue-700 font-bold mr-2">1</div>
+                      <h4 className="font-semibold text-gray-800">Set Template</h4>
+                    </div>
+                    <code className="bg-gray-50 px-3 py-2 rounded border border-gray-200 text-sm text-blue-600 block overflow-x-auto">
+                      https://yoursite.com/order/[[placeholder]]
                     </code>
                   </div>
                   
-                  <div className="hidden lg:block">
-                    <ArrowRight className="h-6 w-6 text-blue-500" />
+                  <div className="flex-shrink-0 text-blue-400">
+                    <ArrowRight className="h-8 w-8" />
                   </div>
                   
-                  <div className="bg-white p-4 rounded-lg border border-blue-200 shadow-sm flex-1">
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Step 2:</span> Copy reference number</p>
-                    <div className="bg-gray-50 px-3 py-2 rounded border border-gray-200 text-sm block">
-                      <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded font-mono">ORDER123</span>
+                  <div className="bg-white p-5 rounded-lg border border-blue-200 shadow-sm w-1/3">
+                    <div className="flex items-center mb-3">
+                      <div className="bg-blue-100 w-7 h-7 rounded-full flex items-center justify-center text-blue-700 font-bold mr-2">2</div>
+                      <h4 className="font-semibold text-gray-800">Copy ID</h4>
+                    </div>
+                    <div className="bg-gray-50 px-3 py-2 rounded border border-gray-200 text-sm flex justify-center">
+                      <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded font-mono">ORDER123</span>
                     </div>
                   </div>
                   
-                  <div className="hidden lg:block">
-                    <ArrowRight className="h-6 w-6 text-blue-500" />
+                  <div className="flex-shrink-0 text-blue-400">
+                    <ArrowRight className="h-8 w-8" />
                   </div>
                   
-                  <div className="bg-white p-4 rounded-lg border border-blue-200 shadow-sm flex-1">
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Step 3:</span> Press shortcut</p>
-                    <div className="bg-green-50 px-3 py-2 rounded border border-green-200 text-sm text-green-800 block">
-                      Opens: <code className="font-mono">yoursite.com/order/ORDER123</code>
+                  <div className="bg-white p-5 rounded-lg border border-blue-200 shadow-sm w-1/3">
+                    <div className="flex items-center mb-3">
+                      <div className="bg-blue-100 w-7 h-7 rounded-full flex items-center justify-center text-blue-700 font-bold mr-2">3</div>
+                      <h4 className="font-semibold text-gray-800">Navigate</h4>
+                    </div>
+                    <div className="bg-green-50 px-3 py-2 rounded border border-green-200 text-sm text-green-800">
+                      <span className="block text-center">Opens:</span>
+                      <code className="font-mono block text-center overflow-x-auto">
+                        yoursite.com/order/ORDER123
+                      </code>
                     </div>
                   </div>
                 </div>
                 
-                <div className="mt-4 bg-blue-50 p-3 rounded-md border border-blue-100">
-                  <p className="text-blue-700 text-sm text-center">
-                    <span className="font-medium">Time saved:</span> No more copying, opening tabs, and pasting reference numbers manually
+                <div className="md:hidden space-y-6">
+                  <div className="bg-white p-4 rounded-lg border border-blue-200 shadow-sm">
+                    <div className="flex items-center mb-2">
+                      <div className="bg-blue-100 w-6 h-6 rounded-full flex items-center justify-center text-blue-700 font-bold mr-2">1</div>
+                      <h4 className="font-semibold text-gray-800">Set Template</h4>
+                    </div>
+                    <code className="bg-gray-50 px-3 py-2 rounded border border-gray-200 text-sm text-blue-600 block overflow-x-auto">
+                      https://yoursite.com/order/[[placeholder]]
+                    </code>
+                  </div>
+                  
+                  <div className="flex justify-center">
+                    <svg className="w-6 h-6 text-blue-400 transform rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </div>
+                  
+                  <div className="bg-white p-4 rounded-lg border border-blue-200 shadow-sm">
+                    <div className="flex items-center mb-2">
+                      <div className="bg-blue-100 w-6 h-6 rounded-full flex items-center justify-center text-blue-700 font-bold mr-2">2</div>
+                      <h4 className="font-semibold text-gray-800">Copy ID</h4>
+                    </div>
+                    <div className="bg-gray-50 px-3 py-2 rounded border border-gray-200 text-sm flex justify-center">
+                      <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded font-mono">ORDER123</span>
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-center">
+                    <svg className="w-6 h-6 text-blue-400 transform rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </div>
+                  
+                  <div className="bg-white p-4 rounded-lg border border-blue-200 shadow-sm">
+                    <div className="flex items-center mb-2">
+                      <div className="bg-blue-100 w-6 h-6 rounded-full flex items-center justify-center text-blue-700 font-bold mr-2">3</div>
+                      <h4 className="font-semibold text-gray-800">Navigate</h4>
+                    </div>
+                    <div className="bg-green-50 px-3 py-2 rounded border border-green-200 text-sm text-green-800">
+                      <span className="block text-center">Opens:</span>
+                      <code className="font-mono block text-center overflow-x-auto">
+                        yoursite.com/order/ORDER123
+                      </code>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="mt-6 bg-blue-50 p-4 rounded-md border border-blue-100">
+                  <p className="text-blue-700 text-sm flex items-center justify-center">
+                    <Clock className="h-4 w-4 mr-2" />
+                    <span className="font-medium">Time saved:</span>
+                    <span className="ml-2">No more copying, opening tabs, and pasting references manually</span>
                   </p>
                 </div>
               </div>
