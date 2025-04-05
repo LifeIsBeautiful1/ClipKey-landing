@@ -51,14 +51,14 @@ const Index = () => {
           
           <div className="animate-float bg-white shadow-xl rounded-2xl p-6 mb-10 w-full max-w-3xl border border-blue-100">
             <img 
-              src="/lovable-uploads/dfa34854-afaa-424d-9478-0e1b1c1668a8.png" 
+              src="/lovable-uploads/e8d2eb63-f19e-4610-a2a1-760b65a704a8.png" 
               alt="ClipKey Interface" 
               className="rounded-lg w-full"
             />
           </div>
           
           <Button 
-            className="bg-blue-500 hover:bg-blue-600 text-white text-lg py-6 px-8" 
+            className="bg-blue-500 hover:bg-blue-600 text-white text-lg py-6 px-8 hover:scale-105 transition-all duration-300 animate-pulse-gentle"
             size="lg"
             onClick={() => window.open(chromeStoreUrl, "_blank")}
           >
@@ -319,7 +319,7 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button 
-                className="bg-blue-500 hover:bg-blue-600"
+                className="bg-blue-500 hover:bg-blue-600 hover:scale-105 transition-all duration-300"
                 onClick={() => window.open(chromeStoreUrl, "_blank")}
               >
                 <ExternalLink className="mr-2 h-5 w-5" />
@@ -333,35 +333,6 @@ const Index = () => {
                 <Star className="mr-2 h-5 w-5" />
                 Rate Extension
               </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* Changelog Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
-            Changelog
-          </h2>
-          
-          <div className="space-y-4">
-            <div className="p-4 border border-blue-100 rounded-lg">
-              <div className="flex justify-between items-center mb-2">
-                <h3 className="font-semibold">v1.2</h3>
-                <span className="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded-full">Latest</span>
-              </div>
-              <p>Added Multiple URL Templates</p>
-            </div>
-            
-            <div className="p-4 border border-gray-200 rounded-lg">
-              <h3 className="font-semibold mb-2">v1.1</h3>
-              <p>Added Right-Click alternative method</p>
-            </div>
-            
-            <div className="p-4 border border-gray-200 rounded-lg">
-              <h3 className="font-semibold mb-2">v1.0</h3>
-              <p>First version</p>
             </div>
           </div>
         </div>
