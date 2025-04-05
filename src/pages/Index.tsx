@@ -51,7 +51,7 @@ const Index = () => {
           
           <div className="animate-float bg-white shadow-xl rounded-2xl p-6 mb-10 w-full max-w-3xl border border-blue-100">
             <img 
-              src="/lovable-uploads/e8d2eb63-f19e-4610-a2a1-760b65a704a8.png" 
+              src="/lovable-uploads/dfa34854-afaa-424d-9478-0e1b1c1668a8.png" 
               alt="ClipKey Interface" 
               className="rounded-lg w-full"
             />
